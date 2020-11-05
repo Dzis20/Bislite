@@ -1,0 +1,101 @@
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(54, 54, 54);
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+h2.section-title {
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.333;;
+}
+.header {
+    background-color: #e8ebf1;
+    height: 120px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    
+}
+.logo {
+    align-self: flex-start;
+}
+ul.main-nav {
+    display: flex;
+    /* padding-top: 3px; */
+    padding-top: 2px;
+}
+.main-nav-item {
+    margin-left: 55px;
+    padding: 12px;
+    padding-top: 10px;
+    border-top: 3px solid transparent;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+ul.main-nav .main-nav-item a {
+    color: #000;
+}
+
+  
+.main-nav-item:hover {
+    border-top-color: #2aacc8;
+    background-color: #fff;
+}
+
+.main-nav-item-list {
+    position: relative;
+    cursor: pointer;
+}
+.main-nav-item-list i {
+    margin-left: 10px;
+}
+.main-nav-second {
+    display: none;
+}
+
+.main-nav-item-list:hover .main-nav-second {
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    border-bottom: 3px solid #2aacc8
+}
+.main-nav-second li {
+    padding: 15px 20px;
+    border-bottom: 1px solid grey;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: none;
+}
+.main-nav-second li:hover a {
+    color: #2aacc8
+}
+.main-nav-second li:last-child {
+    border-bottom: none;
+}
+
+.Web_Design_Wordpress_Design_Mobile_App_Devplopm {
+    
+    font-family: "Arial";
+    color: rgb(0, 0, 0);
+    line-height: 2.769;
+    position: absolute;
+    left: 772px;
+    top: 125.346px;
+    z-index: 127;
+  }
+  
