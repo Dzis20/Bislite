@@ -246,7 +246,12 @@ h1 {
     flex-wrap: wrap;
 }
 .client-content img {
-    width: 33.333%
+    width: 33.333%;
+    transition: 1s;
+}
+.client-content img:hover {
+    transform: scale(1.5);
+    transition: 1s;
 }
 .download {
     margin-bottom: 40px;
