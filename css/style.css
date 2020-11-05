@@ -132,3 +132,43 @@ h1 {
     padding-left: 60px;
     padding-top: 60px;
 }
+.post {
+    background-color: #e8ebf1;
+}
+.post-content {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.post-item {
+    max-width: 225px;
+}
+.post-item-title {
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+.post-title-img {
+    width: 40px;
+    height: 40px;
+    background-color: #2aacc8;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.post-item p {
+    margin-bottom: 35px;
+}
+.post-item a {
+    display: flex;
+    align-items: center;
+    color: #8ac7d9;
+}
+.post-item a img {
+    margin-right: 10px;
+}
