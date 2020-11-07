@@ -1,6 +1,7 @@
 @media (max-width: 1400px) {
     .container {
-        max-width: 1000px
+        max-width: 1000px;
+        padding: 0 20px;
     }
 }
 
@@ -9,18 +10,13 @@
         max-width: 767px;
         padding: 0 20px;
     }
-    ul.main-nav {
-        width: 70%
-    }
-}
-
-@media (max-width: 767px) {
     body.lock {
         overflow: hidden;
     }
     .burger-menu {
         display: block;
         position: relative;
+        top: 15px;
         width: 33px;
         height: 20px;
         z-index: 3;
@@ -32,7 +28,7 @@
         height: 3.84px;
         left: 0;
         top: 8px;
-        background-color: #fff;
+        background-color: #2aacc8;
         transition: 1s;
     }
     .burger-menu::before,
@@ -43,7 +39,7 @@
         height: 3.84px;
         left: 0;
         transition: 1s;
-        background-color: #fff;
+        background-color: #2aacc8;
     }
     .burger-menu::before {
         top: 0;
@@ -59,29 +55,163 @@
         transform: rotate(-45deg);
         bottom: 8px;
         transition: 1s;
-        background-color: #fff;
+        background-color: #2aacc8;
     }
     .burger-menu.active::before {
         transform: rotate(45deg);
         top: 8px;
         transition: 1s;
-        background-color: #fff;
+        background-color: #2aacc8;
     }
-    .slide-menu {
+    ul.main-nav {
         display: block;
         position: fixed;
-        left: -100%;
+        right: -100%;
         top: 0;
         height: 100%;
-        width: 100%;
-        background-color: #242B33;
+        width: 25%;
+        background-color: #e8ebf1;
         z-index: 2;
-        padding: 20px 0px 0px 20px;
-        transition: 1s;
+        padding: 50px 0px 0px 20px;
         overflow: scroll;
     }
-    .slide-menu.active {
-        left: 0;
-        transition: 1s;
+    ul.main-nav li {
+        width: 200px
+    }
+    ul.main-nav.active {
+        right: 0;
+    }
+    ul.main-nav-second li {
+        width: 100%;
+    }
+    .wrapper {
+        position: relative;
+        right: 0;
+    }
+    .wrapper.active {
+        right: 25%;
+    }
+
+    .post-content {
+        flex-wrap: wrap;
+    }
+    .post-item {
+        max-width: 45%;
+        margin-bottom: 40px;
+        
+    }
+    .work-img {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .work-img img {
+        width: 100%;
+    }
+    .work-img:hover .work-hover {
+        display: none;
+    }
+    .client-content img {
+        width: 50%;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+    }
+    .footer-part {
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .wrapper.active {
+        right: 100%;
+    }
+    ul.main-nav.active {
+        right: 0;
+        width: 100%;
+    }
+    .burger-menu.active {
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin-right: 20px;
+        margin-top: 55px;
+    }
+
+    .post-item {
+        max-width: 100%;
+    }
+
+    .test-client-content {
+        flex-direction: column;
+    }
+    .testimonial, .client {
+        width: 100%;
+    }
+    .testimonial {
+        margin-bottom: 40px;
+    }
+    .client-content img {
+        width: 33%;
+    }
+    .download-content {
+        flex-direction: column;
+    }
+    .download-content p {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .download-btn {
+        justify-content: center;
+        width: 60%;
+        align-self: center;
+    }
+    .copyright-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyright-content img {
+        padding-top: 20px;
+        align-self: flex-end;
+        justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .work-img {
+        width: 100%;
+    }
+    .client-content img {
+        width: 50%;
+    }
+    .download-btn {
+        width: 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-part {
+        width: 100%;
+    }
+    .footer-part p {
+        max-width: 100%;
+    }
+    .footer-connect-content {
+        max-width: 100%;
+    }
+    .footer-connect-content a {
+        width: 30%;
+    }
+}
+@media (max-width: 400px) {
+
+    .client-content img {
+        width: 100%;
+    }
+    .client-content img:hover {
+        transform: none;
     }
 }
